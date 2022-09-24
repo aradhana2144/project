@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>penta</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(1.jpg);
+                background-size: cover;
+            }
+            .navbar{
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo{
+                width: 120px;
+                cursor: pointer;
+            }
+            .navbar ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .navbar ul li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #fbff1e;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.5s;
+            }
+            .navbar ul li:hover::after{
+                width: 100%;
+
+            }
+            .content{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: center;
+                color: black;
+            }
+            .content h1{
+                font-size: 70px;
+                margin-top: 80px;
+                color: #fff;
+            }
+            .content p{
+                width: 60%;
+                margin: 20px 0;
+                font-weight: 100;
+                line-height: 25px;
+                text-align: justify;
+                color: rgb(186, 253, 0);
+                padding: 0 280px;
+            }
+            button{
+                width: 200PX;
+                padding: 15PX 0;
+                text-align: center;
+                margin: 20px 10px;
+                border-radius: 25px;
+                font-weight: bold;
+                border: 2px solid #ff3e3e;
+                background: transparent;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+            }
+            span{
+                background:  #df387d;
+                height: 100%;
+                width: 0;
+                border-radius: 25px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: 0.5s;
+            }
+            button:hover span{
+                width: 100%;
+                
+            }
+            button:hover {
+                border: none;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <img src="penta_logo_opt.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">contact Us</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>OCEAN ON THE EARTH</h1>
+                <p>Historically, there are four named oceans: the Atlantic, Pacific, Indian, and Arctic. However, most countries - including the United States - now recognize the Southern (Antarctic) as the fifth ocean. The Pacific, Atlantic, and Indian are the most commonly known.</p>
+                <div>
+                    <button type="button"><span></span> WATCH MORE</button>
+                    <button type="button"><span></span> SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
